@@ -14,8 +14,8 @@ class InputParser {
         return InputTrain(name = name, engine = listOf(engine), bogies = bogies)
     }
 
-    fun parseInput(): ParsedInput {
-        val input = FileUtils.readFile("src/main/resources/input/input1.txt")
+    fun parseInput(inputFileLocation: String): ParsedInput {
+        val input = FileUtils.readFile(inputFileLocation)
 
         val trainAInput = input[0].split(" ")
         val trainBInput = input[1].split(" ")

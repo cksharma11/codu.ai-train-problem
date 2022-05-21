@@ -25,7 +25,7 @@ internal class InputParserTest {
             trainB = InputTrain(name = "TRAIN_B", engine = listOf("ENGINE"), bogies = listOf("NJP", "GHY"))
         )
         assertEquals(
-            expected, InputParser().parseInput()
+            expected, InputParser().parseInput("/test/input.txt")
         )
     }
 
